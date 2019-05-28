@@ -1,7 +1,8 @@
 golang 打印相关测试
 #### 打印
 ```
-hello world
+go test -test.bench="Benchmark_printf" -benchmem .
+
 goos: linux
 goarch: amd64
 Benchmark_printf-4   	hello world
@@ -11,7 +12,8 @@ ok  	_/home/guo/src/github.com/guonaihong/go-bench-code/fmt	1.287s
 ```
 
 ```
-hello, world
+go test -test.bench="Benchmark_println" -benchmem .
+
 goos: linux
 goarch: amd64
 Benchmark_println-4   	hello, world
