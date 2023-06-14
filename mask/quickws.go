@@ -14,6 +14,7 @@ func maskSlow2(payload []byte, key uint32) {
 	}
 }
 
+//go:nosplit
 func maskQuickws(payload []byte, key uint32) {
 	if len(payload) == 0 {
 		return
